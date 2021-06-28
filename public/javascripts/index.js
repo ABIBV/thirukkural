@@ -281,10 +281,10 @@ const attachListener = () => {
         .then(() => {
           console.log('data entered');
           clearFields();
-          const kuralNo = parseInt($('selector#kuralNo').val()) + 1;
-          alert(`Kural entered - ${kuralNo - 1}`);
+          const kuralNo = parseInt($('select#kuralNo').val()) + 1;
+          alert('Kural entered', kuralNo - 1);
           if (kuralNo <= 11) {
-            $('selector#kuralNo').val(kuralNo);
+            $('select#kuralNo').val(kuralNo);
             localStorage.setItem('kuralNo', kuralNo);
           }
         })
