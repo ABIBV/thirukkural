@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thirukkural Store</title>
+    <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
+  </head>
+  <body class="">
+    <div class="container mx-auto border border-primary bg-light rounded p-2 p-md-4">
+      <div class="text-center card shadow-sm py-3">
+        <h1 class="mb-0">திருக்குறள் சேகரம்</h1>
+      </div>
+      <div class="mt-4">
+        <div class="row no-gutters mb-4">
+          <div class="col-12 col-md-4">
+            <div class="form-group">
+              <label for="paal">பால்</label>
+              <select class="form-control" name="paal" id="paal">
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="form-group">
+              <label for="iyal">இயல்</label>
+              <select class="form-control" name="iyal" id="iyal">
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="form-group">
+              <label for="adhigaram">அதிகாரம்</label>
+              <select class="form-control" name="adhigaram" id="adhigaram">
+              </select>
+            </div>
+          </div>        
+        </div>
+        <div>
+          <div class="form-group mb-4">
+            <label for="Kural">குறள்</label>
+            <div class="input-group">
+              <div class="input-group-prependnd">
+                <select class="form-control bg-light h-100" name="kuralNo" id="kuralNo"></select>
+              </div>
+              <textarea class="form-control" name="kural" id="kural"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="form-group mb-4">
+                <label for="karunanidhiUrai">கலைஞர் மு.கருணாநிதி உரை</label>
+                <textarea class="form-control" name="karunanidhiUrai" id="karunanidhiUrai"></textarea>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group mb-4">
+                <label for="varadharajanarUrai">மு.வரதராசனார் உரை</label>
+                <textarea class="form-control" name="varadharajanarUrai" id="varadharajanarUrai"></textarea>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group mb-4">
+                <label for="salamonPapiyaUrai">சாலமன் பாப்பையா உரை</label>
+                <textarea class="form-control" name="salamonPapiyaUrai" id="salamonPapiyaUrai"></textarea>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group mb-4">
+                <label for="parimelazhagarUrai">பரிமேலழகர் உரை</label>
+                <textarea class="form-control" name="parimelazhagarUrai" id="parimelazhagarUrai"></textarea>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group mb-4">
+                <label for="manakudavaiUrai">மணக்குடவர் உரை</label>
+                <textarea class="form-control" name="manakudavaiUrai" id="manakudavaiUrai"></textarea>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group mb-4">
+                <label for="munisamyUrai">திருக்குறளார் வீ. முனிசாமி உரை</label>
+                <textarea class="form-control" name="munisamyUrai" id="munisamyUrai"></textarea>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group mb-4">
+                <label for="translation">Translation</label>
+                <textarea class="form-control" name="translation" id="translation"></textarea>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group mb-4">
+                <label for="explanation">Explanation</label>
+                <textarea class="form-control" name="explanation" id="explanation"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 text-center">
+            <a href="#" class="submitBtn btn btn-primary btn-block">Submit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- update the version number as needed -->
+    <script src="./javascripts/bootstrap.bundle.min.js"></script>
+    <script src="./javascripts/jquery-3.6.0.slim.min.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.6.8/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-firestore.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script defer src="./javascripts/index.js"></script>
+  </body>
+</html>
